@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main (int argc, char **argv){
+
+	int iarray[] = {1,2,3};
+	char carray[] = {'a','b','c'};
+	int* iarrayPtr;
+	char* carrayPtr;
+
+	iarrayPtr = &iarray;
+	carrayPtr = &carray;
+	
+	printf("1sl of iarray: %d\n",*iarrayPtr);
+	printf("1sl of iarray: %d\n",*iarrayPtr);
+	printf("1sl of iarray: %d\n",*iarrayPtr);
+
+printf("1sl of iarray: %d\n",*iarrayPtr);
+}

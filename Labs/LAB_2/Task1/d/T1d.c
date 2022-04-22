@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main (int argc, char **argv){
+
+	int iarray[] = {1,2,3};
+	char carray[] = {'a','b','c'};
+	int* iarrayPtr;
+	char* carrayPtr;
+
+	iarrayPtr = &iarray;
+	carrayPtr = &carray;
+	
+	printf("1sl of iarray: %d\n",*iarrayPtr);
+	printf("2nd of iarray: %d\n",*(iarrayPtr+1));
+	printf("3th of iarray: %d\n",*(iarrayPtr+2));
+
+
+	printf("1sl of carray: %c\n",*carrayPtr);
+	printf("2nd of carray: %c\n",*(carrayPtr+1));
+	printf("3th of carray: %c\n",*(carrayPtr+2));
+	
+		
+	int* p;
+
+	printf("value of uninitialized pointer: %p\n", p);
+}
